@@ -24,10 +24,7 @@ jobs:
     # npm install
     - name: Run npm install
       run: |
-        pwd
-        [ -f "package-lock.json" ] && rm package-lock.json
-        npm install --save node-releases
-        npm install gulp
+        npm run preinstall
     
     # gulp bundle and package solution
     - name: Bundle 
