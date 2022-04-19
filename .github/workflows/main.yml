@@ -27,6 +27,7 @@ jobs:
         pwd
         [ -f "package-lock.json" ] && rm package-lock.json
         npm install --save node-releases
+        npm install gulp
     
     # gulp bundle and package solution
     - name: Bundle 
