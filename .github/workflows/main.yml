@@ -1,6 +1,12 @@
 name: SPFx WebParts CICD with Office 365 CLI
 
-on: push
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        default: Automated commit
+        description: Message for the commit
+        required: true
 
 # Variables that are available for all the jobs in the workflow
 env:
