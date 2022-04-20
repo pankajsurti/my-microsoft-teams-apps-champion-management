@@ -24,7 +24,7 @@ jobs:
     # npm install
     - name: Run npm install
       run: |
-        npm run preinstall
+        npm install
     
     # gulp bundle and package solution
     - name: Bundle 
